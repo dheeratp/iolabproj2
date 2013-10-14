@@ -1,0 +1,55 @@
+<html>
+	<head>
+		<style>
+		.column {width:300px; float:left;margin:20px;}
+		li a {text-decoration: none;}
+		ul {list-style-type: none;}
+		</style>
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script src="_js/script.js"></script>
+
+	</head>
+	<body>
+	Implementing Basic Functionality for IO Lab Project 2 Photo Tagger
+	<hr>
+
+	<div class="column">
+		<p>1. Allow user to view and click on related tags after clicking a category</p>
+
+		<p>Categories
+		<ul>
+			<li><a href="#" class="category">animals</a></li>
+			<li><a href="#" class="category">architecture</a></li>
+			<li><a href="#" class="category">art</a></li>
+			<li><a href="#" class="category">fashion</a></li>
+			<li><a href="#" class="category">food</a></li>
+			<li><a href="#" class="category">landscape</a></li>
+			<li><a href="#" class="category">nature</a></li>
+			<li><a href="#" class="category">people</a></li>
+			<li><a href="#" class="category">urban</a></li>
+		</ul></p>
+
+		<hr>
+		2. Allow user to view and click on related tags after typing in a tag.<br><br>
+
+		<form id="tags-search">
+				  <label>Enter a tag</label><br>
+				  <input id="query" type="text">
+				  <input type="submit" id="submit">
+				</form>
+	</div>
+
+
+	<div class="column">
+		<p>Some results over here.</p>
+		<ul id="results">
+	</div>
+
+	<div class="column">
+		<p>Added tags</p>
+		<ul id="tag-list"></ul>
+	</div>
+
+</body>
+
+</html>
