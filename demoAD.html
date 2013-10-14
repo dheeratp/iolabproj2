@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+    <title>Tag.me - Tag your photos quickly and easily.</title>
+    <meta name="Description" content="The Design Portfolio of Ajeeta Dhole">
+    <meta name="viewport" content="width = device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Glegoo' rel='stylesheet' type='text/css'>
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+	<div id="bodyContainer">
+		<div id="logo">
+			<h1>Tag.me</h1>
+		</div>
+		<div id="leftContainer">
+			<div id="imageContainer">
+				<img id="myPhoto" src="css/background.jpg" alt="My Photo" />
+			</div>
+			<div id="tagContainer">
+				<div class="tag">
+					<p>#nikond700</p>
+				</div>
+				<div class="tag">
+					<p>#oct2012</p>
+				</div>
+				<div class="tag">
+					<p>#122mm</p>
+				</div>
+			</div>
+			<div id="doneButton">
+				<p id="doneButtonText">Done Tagging</p>
+			</div>
+		</div>
+
+		<div class="rightContainer">
+			<div class="header">
+				<h2>Add Category Tags</h2>
+				<div id="paginationContainer">
+					<div class="pagination" id="active"></div>
+					<div class="pagination"></div>
+					<div class="pagination"></div>	
+					<div class="pagination"></div>	
+				</div>	
+			</div>
+			<div class="category">
+				<img class="categoryImage" src="css/animals.jpg" alt="Animals"/>
+				<p class="tagName">Animals</p>	
+			</div>
+			<div class="category">
+				<img class="categoryImage" src="css/architecture.jpg" alt="Architecture"/>
+				<p class="tagName">Architecture</p>	
+			</div>
+			<div class="category">
+				<img class="categoryImage" src="css/art.jpg" alt="Art"/>
+				<p class="tagName">Art</p>	
+			</div>
+			<div class="category">
+				<img class="categoryImage" src="css/fashion.jpg" alt="Fashion"/>
+				<p class="tagName">Fashion</p>	
+			</div>
+			<div class="category">
+				<img class="categoryImage" src="css/food.jpg" alt="Food"/>
+				<p class="tagName">Food</p>	
+			</div>
+			<div class="category">
+				<img class="categoryImage" src="css/journalism.jpg" alt="Journalism"/>
+				<p class="tagName">Journalism</p>	
+			</div>
+			<div class="category">
+				<img class="categoryImage" src="css/landscape.jpg" alt="Landscapes"/>
+				<p class="tagName">Landscapes</p>	
+			</div>
+			<div class="category">
+				<img class="categoryImage" src="css/nature.jpg" alt="Nature"/>
+				<p class="tagName">Nature</p>	
+			</div>
+			<div class="category">
+				<img class="categoryImage" src="css/people.jpg" alt="People"/>
+				<p class="tagName">People</p>	
+			</div>
+			<div class="category">
+				<img class="categoryImage" src="css/sports.jpg" alt="Sports"/>
+				<p class="tagName">Sports</p>	
+			</div>
+			<div class="category">
+				<img class="categoryImage" src="css/stillLife.jpg" alt="Still Life"/>
+				<p class="tagName">Still Life</p>	
+			</div>
+			<div class="category">
+				<img class="categoryImage" src="css/urban.jpg" alt="Urban"/>
+				<p class="tagName">Urban</p>	
+			</div>
+		</div>
+		
+		<div class="rightContainer">
+			<div class="header">
+				<h2>Add Color Tags</h2>
+				<div id="paginationContainer">
+					<div class="pagination"></div>
+					<div class="pagination" id="active"></div>
+					<div class="pagination"></div>	
+					<div class="pagination"></div>	
+				</div>			
+			</div>
+			<div class="color">
+				<div class="hue" id="red"></div>
+				<p class="tagName">Red</p>
+			</div>
+			<div class="color">
+				<div class="hue" id="orange"></div>
+				<p class="tagName">Orange</p>
+			</div>
+			<div class="color">
+				<div class="hue" id="yellow"></div>
+				<p class="tagName">Yellow</p>
+			</div>
+			<div class="color">
+				<div class="hue" id="green"></div>
+				<p class="tagName">Green</p>
+			</div>
+			<div class="color">
+				<div class="hue" id="blue"></div>
+				<p class="tagName">Blue</p>
+			</div>
+			<div class="color">
+				<div class="hue" id="teal"></div>
+				<p class="tagName">Teal</p>
+			</div>
+			<div class="color">
+				<div class="hue" id="purple"></div>
+				<p class="tagName">Purple</p>
+			</div>
+			<div class="color">
+				<div class="hue" id="pink"></div>
+				<p class="tagName">Pink</p>
+			</div>
+			<div class="color">
+				<div class="hue" id="brown"></div>
+				<p class="tagName">Brown</p>
+			</div>
+			<div class="color">
+				<div class="hue" id="black"></div>
+				<p class="tagName">Black</p>
+			</div>
+			<div class="color">
+				<div class="hue" id="white"></div>
+				<p class="tagName">White</p>
+			</div>
+			<div class="color">
+				<div id="halfCircleLeft"></div>
+				<div id="halfCircleRight"></div>
+				<p class="tagName">Black & White</p>
+			</div>
+		</div>
+
+		<div class="rightContainer">
+			<div class="header">
+				<h2>Add Location Tags</h2>
+				<div id="paginationContainer">
+					<div class="pagination"></div>
+					<div class="pagination"></div>
+					<div class="pagination" id="active"></div>	
+					<div class="pagination"></div>	
+				</div>			
+			</div>
+			<form action="#" method="foo">
+				<input type="text" name="addTags" placeholder="Enter location where photo was taken.">
+			</form>
+		</div>
+
+		<div class="rightContainer">
+			<div class="header">
+				<h2>Want to add more tags?</h2>
+				<div id="paginationContainer">
+					<div class="pagination"></div>
+					<div class="pagination"></div>
+					<div class="pagination"></div>	
+					<div class="pagination" id="active"></div>	
+				</div>	
+			</div>
+			<div>
+				<form action="#" method="foo">
+					<input type="text" name="addTags" placeholder="Enter your own tags here. Separate multiple tags with commas.">
+					<div id="submitButton">
+						<p id="submitButtonText">Submit Tags</p>
+					</div>
+				</form>
+			</div>
+			<div id="suggestedTags">
+				<h3>Suggested Tags</h3>
+				<div class="suggestedTag">
+					<p>#kids</p>
+				</div>
+				<div class="suggestedTag">
+					<p>#girl</p>
+				</div>
+				<div class="suggestedTag">
+					<p>#boy</p>
+				</div>
+				<div class="suggestedTag">
+					<p>#hippo</p>
+				</div>
+				<div class="suggestedTag">
+					<p>#zoo</p>
+				</div>
+				<div class="suggestedTag">
+					<p>#water</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
+
+
+
