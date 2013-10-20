@@ -43,7 +43,7 @@ $(document).ready(function(){
         }
     );
 
-    $("#categoryContainer").on("click", ".category",
+    $('.category').click(
         function(){
             $(this).children(':nth-child(3)').css({
                 display:'block',
@@ -53,15 +53,15 @@ $(document).ready(function(){
             },300);
             newTag = $(this).children(':nth-child(4)').text().toLowerCase();
             $('#addedTagsContainer').append(
-                '<li class="addedTag"><span>#' + newTag + '</span><span class="addRemove">-</span></li>'
+                '<li class="newTag"><span>#' + newTag + '</span><span class="addRemove">-</span></li>'
             );
             $('#addedTagsContainer').children(':last-child').animate({
-                opacity:1,
+                opacity:1
             },200);
         }
     );
 
-    $(".addFromContainer").on("click", ".color",
+    $('.color').click(
         function(){
             $(this).children(':nth-child(3)').css({
                 display:'block',
@@ -71,10 +71,10 @@ $(document).ready(function(){
             },300);
             newTag = $(this).children(':nth-child(4)').text().toLowerCase();
             $('#addedTagsContainer').append(
-                '<li class="addedTag"><span>#' + newTag + '</span><span class="addRemove">-</span></li>'
+                '<li class="newTag"><span>#' + newTag + '</span><span class="addRemove">-</span></li>'
             );
             $('#addedTagsContainer').children(':last-child').animate({
-                opacity:1,
+                opacity:1
             },200);
         }
     );
@@ -92,7 +92,7 @@ $(document).ready(function(){
                 '<li class="newTag"><span>' + newTag + '</span><span class="addRemove">-</span></li>'
             );
             $('#addedTagsContainer').children(':last-child').animate({
-                opacity:1,
+                opacity:1
             },200);
         }
     );
@@ -110,7 +110,7 @@ $(document).ready(function(){
                 '<li class="newTag"><span>' + newTag + '</span><span class="addRemove">-</span></li>'
             );
             $('#addedTagsContainer').children(':last-child').animate({
-                opacity:1,
+                opacity:1
             },200);
         }
     );
