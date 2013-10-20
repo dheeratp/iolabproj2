@@ -1,217 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8"/>
-    <title>Tag.me - Tag your photos quickly and easily.</title>
-    <meta name="Description" content="The Design Portfolio of Ajeeta Dhole">
-    <meta name="viewport" content="width = device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/style.css"/>
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Glegoo' rel='stylesheet' type='text/css'>
-</head>
-<body>
-	<div id="bodyContainer">
+	<head>
+		<meta charset="utf-8"/>
+	    <title>Tag.me</title>
+	    <meta name="Description" content="Tag your photos quickly and easily."/>
+	    <meta name="viewport" content="width = device-width, initial-scale=1.0"/>
+	    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+	    <link href='http://fonts.googleapis.com/css?family=Glegoo' rel='stylesheet' type='text/css'/>
+	    <script src="js/jquery-1.10.2.min.js"></script>
+	    <script src="js/script.js"></script>
+	</head>
+	<body>
 		<div id="logo">
 			<h1>Tag.me</h1>
 		</div>
-		<div id="leftContainer">
+		<div id="addToContainer">
 			<div id="imageContainer">
-				<img id="myPhoto" src="css/background.jpg" alt="My Photo" />
+				<img src="css/background.jpg" alt="My Photo" />
 			</div>
-			<div id="tagContainer">
-				<div class="tag">
-					<p>#nikond700</p>
-				</div>
-				<div class="tag">
-					<p>#oct2012</p>
-				</div>
-				<div class="tag">
-					<p>#122mm</p>
-				</div>
-			</div>
-			<div id="doneButton">
-				<p id="doneButtonText">Done Tagging</p>
-			</div>
-		</div>
-
-		<div class="rightContainer">
-			<div class="header">
-				<h2>Select Category</h2>
-				<div id="paginationContainer">
-					<div class="pagination" id="active"></div>
-					<div class="pagination"></div>
-					<div class="pagination"></div>	
-					<div class="pagination"></div>	
-				</div>	
-			</div>
-			<div class="category">
-				<img class="categoryImage" src="css/animals.jpg" alt="Animals"/>
-				<p class="tagName">Animals</p>	
-			</div>
-			<div class="category">
-				<img class="categoryImage" src="css/architecture.jpg" alt="Architecture"/>
-				<p class="tagName">Architecture</p>	
-			</div>
-			<div class="category">
-				<img class="categoryImage" src="css/art.jpg" alt="Art"/>
-				<p class="tagName">Art</p>	
-			</div>
-			<div class="category">
-				<img class="categoryImage" src="css/fashion.jpg" alt="Fashion"/>
-				<p class="tagName">Fashion</p>	
-			</div>
-			<div class="category">
-				<img class="categoryImage" src="css/food.jpg" alt="Food"/>
-				<p class="tagName">Food</p>	
-			</div>
-			<div class="category">
-				<img class="categoryImage" src="css/journalism.jpg" alt="Journalism"/>
-				<p class="tagName">Journalism</p>	
-			</div>
-			<div class="category">
-				<img class="categoryImage" src="css/landscape.jpg" alt="Landscapes"/>
-				<p class="tagName">Landscapes</p>	
-			</div>
-			<div class="category">
-				<img class="categoryImage" src="css/nature.jpg" alt="Nature"/>
-				<p class="tagName">Nature</p>	
-			</div>
-			<div class="category">
-				<img class="categoryImage" src="css/people.jpg" alt="People"/>
-				<p class="tagName">People</p>	
-			</div>
-			<div class="category">
-				<img class="categoryImage" src="css/sports.jpg" alt="Sports"/>
-				<p class="tagName">Sports</p>	
-			</div>
-			<div class="category">
-				<img class="categoryImage" src="css/stillLife.jpg" alt="Still Life"/>
-				<p class="tagName">Still Life</p>	
-			</div>
-			<div class="category">
-				<img class="categoryImage" src="css/urban.jpg" alt="Urban"/>
-				<p class="tagName">Urban</p>	
-			</div>
-		</div>
-		
-		<div class="rightContainer">
-			<div class="header">
-				<h2>Select Color</h2>
-				<div id="paginationContainer">
-					<div class="pagination"></div>
-					<div class="pagination" id="active"></div>
-					<div class="pagination"></div>	
-					<div class="pagination"></div>	
-				</div>			
-			</div>
-			<div class="color">
-				<div class="hue" id="red"></div>
-				<p class="tagName">Red</p>
-			</div>
-			<div class="color">
-				<div class="hue" id="orange"></div>
-				<p class="tagName">Orange</p>
-			</div>
-			<div class="color">
-				<div class="hue" id="yellow"></div>
-				<p class="tagName">Yellow</p>
-			</div>
-			<div class="color">
-				<div class="hue" id="green"></div>
-				<p class="tagName">Green</p>
-			</div>
-			<div class="color">
-				<div class="hue" id="blue"></div>
-				<p class="tagName">Blue</p>
-			</div>
-			<div class="color">
-				<div class="hue" id="teal"></div>
-				<p class="tagName">Teal</p>
-			</div>
-			<div class="color">
-				<div class="hue" id="purple"></div>
-				<p class="tagName">Purple</p>
-			</div>
-			<div class="color">
-				<div class="hue" id="pink"></div>
-				<p class="tagName">Pink</p>
-			</div>
-			<div class="color">
-				<div class="hue" id="brown"></div>
-				<p class="tagName">Brown</p>
-			</div>
-			<div class="color">
-				<div class="hue" id="white"></div>
-				<p class="tagName">White</p>
-			</div>
-			<div class="color">
-				<div class="hue" id="black"></div>
-				<p class="tagName">Black</p>
-			</div>
-			<div class="color">
-				<div id="halfCircleLeft"></div>
-				<div id="halfCircleRight"></div>
-				<p class="tagName">Black and White</p>
-			</div>
-		</div>
-
-		<div class="rightContainer">
-			<div class="header">
-				<h2>Select Location</h2>
-				<div id="paginationContainer">
-					<div class="pagination"></div>
-					<div class="pagination"></div>
-					<div class="pagination" id="active"></div>	
-					<div class="pagination"></div>	
-				</div>			
-			</div>
-			<form action="#" method="foo">
-				<input type="text" name="addTags" placeholder="Enter location where photo was taken.">
-			</form>
-		</div>
-
-		<div class="rightContainer">
-			<div class="header">
-				<h2>Add More Tags</h2>
-				<div id="paginationContainer">
-					<div class="pagination"></div>
-					<div class="pagination"></div>
-					<div class="pagination"></div>	
-					<div class="pagination" id="active"></div>	
-				</div>	
-			</div>
+			<ul id="addedTagsContainer">
+				<li class="addedTag">
+					<span>#nikond700</span>
+					<span class="addRemove">-</span>
+				</li>
+				<li class="addedTag">
+					<span>#oct2012</span>
+					<span class="addRemove">-</span>
+				</li>
+				<li class="addedTag">
+					<span>#122mm</span>
+					<span class="addRemove">-</span>
+				</li>
+			</ul>
 			<div>
-				<form action="#" method="foo">
-					<input type="text" name="addTags" placeholder="Enter your own tags here. Separate multiple tags with commas.">
-					<div id="submitButton">
-						<p id="submitButtonText">Submit Tags</p>
-					</div>
-				</form>
-			</div>
-			<div id="suggestedTags">
-				<h3>Suggested Tags</h3>
-				<div class="tag">
-					<p>#kids</p>
-				</div>
-				<div class="tag">
-					<p>#girl</p>
-				</div>
-				<div class="tag">
-					<p>#boy</p>
-				</div>
-				<div class="tag">
-					<p>#hippo</p>
-				</div>
-				<div class="tag">
-					<p>#zoo</p>
-				</div>
-				<div class="tag">
-					<p>#water</p>
-				</div>
+				<span id="done">Done Tagging?</span>
+				<span id="postButton">Post to Flickr</span>
 			</div>
 		</div>
-	</div>
-</body>
+		<div id="wrapper">
+			<div class="addFromContainer">
+				<div class="header">
+					<h2>Add Category Tags</h2>
+					<ul class="paginationContainer">
+						<li class="pagination active"></li>
+						<li class="pagination"></li>
+						<li class="pagination"></li>	
+						<li class="pagination"></li>	
+					</ul>	
+				</div>
+				<ul id="categoryContainer">
+					<li class="category">
+						<img src="css/animals.jpg" alt="Animals"/>
+						<span class="addCategory">+</span>
+						<span class="addedCategory">&#x2713</span>
+						<h4>Animals</h4>	
+					</li>
+					<li class="category">
+						<img src="css/architecture.jpg" alt="Architecture"/>
+						<span class="addCategory">+</span>
+						<span class="addedCategory">&#x2713</span>
+						<h4>Architecture</h4>	
+					</li>
+					<li class="category">
+						<img src="css/art.jpg" alt="Art"/>
+						<span class="addCategory">+</span>
+						<span class="addedCategory">&#x2713</span>
+						<h4>Art</h4>	
+					</li>
+					<li class="category">
+						<img src="css/fashion.jpg" alt="Fashion"/>
+						<span class="addCategory">+</span>
+						<span class="addedCategory">&#x2713</span>
+						<h4>Fashion</h4>	
+					</li>
+					<li class="category">
+						<img src="css/food.jpg" alt="Food"/>
+						<span class="addCategory">+</span>
+						<span class="addedCategory">&#x2713</span>
+						<h4>Food</h4>	
+					</li>
+					<li class="category">
+						<img src="css/journalism.jpg" alt="Journalism"/>
+						<span class="addCategory">+</span>
+						<span class="addedCategory">&#x2713</span>
+						<h4>Journalism</h4>	
+					</li>
+					<li class="category">
+						<img src="css/landscape.jpg" alt="Landscapes"/>
+						<span class="addCategory">+</span>
+						<span class="addedCategory">&#x2713</span>
+						<h4>Landscapes</h4>	
+					</li>
+					<li class="category">
+						<img src="css/nature.jpg" alt="Nature"/>
+						<span class="addCategory">+</span>
+						<span class="addedCategory">&#x2713</span>
+						<h4>Nature</h4>	
+					</li>
+					<li class="category">
+						<img src="css/people.jpg" alt="People"/>
+						<span class="addCategory">+</span>
+						<span class="addedCategory">&#x2713</span>
+						<h4>People</h4>	
+					</li>
+					<li class="category">
+						<img src="css/sports.jpg" alt="Sports"/>
+						<span class="addCategory">+</span>
+						<span class="addedCategory">&#x2713</span>
+						<h4>Sports</h4>
+					</li>
+					<li class="category">
+						<img src="css/stillLife.jpg" alt="Still Life"/>
+						<span class="addCategory">+</span>
+						<span class="addedCategory">&#x2713</span>
+						<h4>Still Life</h4>	
+					</li>
+					<li class="category">
+						<img src="css/urban.jpg" alt="Urban"/>
+						<span class="addCategory">+</span>
+						<span class="addedCategory">&#x2713</span>
+						<h4>Urban</h4>	
+					</li>
+				</ul>
+			</div>		
+			<div class="addFromContainer">
+				<div class="header">
+					<h2>Add Color Tags</h2>
+					<ul class="paginationContainer">
+						<li class="pagination"></li>
+						<li class="pagination active"></li>
+						<li class="pagination"></li>	
+						<li class="pagination"></li>	
+					</ul>			
+				</div>
+				<div class="color">
+					<div class="hue" id="red"></div>
+					<span class="addColor">+</span>
+					<span class="addedColor">&#x2713</span>
+					<h4>Red</h4>	
+				</div>
+				<div class="color">
+					<div class="hue" id="orange"></div>
+					<span class="addColor">+</span>
+					<span class="addedColor">&#x2713</span>
+					<h4>Orange</h4>	
+				</div>
+				<div class="color">
+					<div class="hue" id="yellow"></div>
+					<span class="addColor">+</span>
+					<span class="addedColor">&#x2713</span>
+					<h4>Yellow</h4>	
+				</div>
+				<div class="color">
+					<div class="hue" id="green"></div>
+					<span class="addColor">+</span>
+					<span class="addedColor">&#x2713</span>
+					<h4>Green</h4>	
+				</div>
+				<div class="color">
+					<div class="hue" id="blue"></div>
+					<span class="addColor">+</span>
+					<span class="addedColor">&#x2713</span>
+					<h4>Blue</h4>	
+				</div>
+				<div class="color">
+					<div class="hue" id="teal"></div>
+					<span class="addColor">+</span>
+					<span class="addedColor">&#x2713</span>
+					<h4>Teal</h4>	
+				</div>
+				<div class="color">
+					<div class="hue" id="purple"></div>
+					<span class="addColor">+</span>
+					<span class="addedColor">&#x2713</span>
+					<h4>Purple</h4>	
+				</div>
+				<div class="color">
+					<div class="hue" id="pink"></div>
+					<span class="addColor">+</span>
+					<span class="addedColor">&#x2713</span>
+					<h4>Pink</h4>	
+				</div>
+				<div class="color">
+					<div class="hue" id="brown"></div>
+					<span class="addColor">+</span>
+					<span class="addedColor">&#x2713</span>
+					<h4>Brown</h4>	
+				</div>
+				<div class="color">
+					<div class="hue" id="black"></div>
+					<span class="addColor">+</span>
+					<span class="addedColor">&#x2713</span>
+					<h4>Black</h4>	
+				</div>
+				<div class="color">
+					<div class="hue" id="white"></div>
+					<span class="addColor">+</span>
+					<span class="addedColor">&#x2713</span>
+					<h4>White</h4>	
+				</div>
+				<div class="color">
+					<div id="halfCircleLeft"></div>
+					<span class="addColor">+</span>
+					<span class="addedColor">&#x2713</span>
+					<h4>Black & White</h4>
+					<div id="halfCircleRight"></div>	
+				</div>
+			</div>
+			<div class="addFromContainer">
+				<div class="header">
+					<h2>Add Location Tags</h2>
+					<ul class="paginationContainer">
+						<li class="pagination"></li>
+						<li class="pagination"></li>
+						<li class="pagination active"></li>	
+						<li class="pagination"></li>	
+					</ul>			
+				</div>
+				<form method="get" id="getLocationTags">
+					<input type="text" name="addLocationTags" id="addLocationTags" placeholder="Enter location where photo was taken.">
+				</form>
+				<div id="locationTagsContainer">
+					<h3>Suggested Tags</h3>
+					<ul id="suggestedLocationTags">
+						<li class="suggestedTag">
+							<span>#kids</span>
+							<span class="addRemove">+</span>
+							<span class="added">&#x2713</span>
+						</li>
+						<li class="suggestedTag">
+							<span>#girl</span>
+							<span class="addRemove">+</span>
+							<span class="added">&#x2713</span>
+						</li>
+						<li class="suggestedTag">
+							<span>#boy</span>
+							<span class="addRemove">+</span>
+							<span class="added">&#x2713</span>
+						</li>
+						<li class="suggestedTag">
+							<span>#hippo</span>
+							<span class="addRemove">+</span>
+							<span class="added">&#x2713</span>
+						</li>
+						<li class="suggestedTag">
+							<span>#zoo</span>
+							<span class="addRemove">+</span>
+							<span class="added">&#x2713</span>
+						</li>
+						<li class="suggestedTag">
+							<span>#water</span>
+							<span class="addRemove">+</span>
+							<span class="added">&#x2713</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="addFromContainer">
+				<div class="header">
+					<h2>Want to add more tags?</h2>
+					<ul class="paginationContainer">
+						<li class="pagination"></li>
+						<li class="pagination"></li>
+						<li class="pagination"></li>	
+						<li class="pagination active"></li>	
+					</ul>	
+				</div>
+				<form id="getUserTags">
+					<input type="text" name="userTags" id="userTags" placeholder="Enter your own tags here. Separate multiple tags with commas.">
+					<input type="submit" id="submitButton" value="Submit Tags"/>
+				</form>
+				<div id="userTagsContainer">
+					<h3 id="suggestedTagHeader">Suggested Tags</h3>
+					<ul id="suggestedUserTags">
+					</ul>
+				</div>				
+			</div>
+		</div>
+	</body>
 </html>
 
 
